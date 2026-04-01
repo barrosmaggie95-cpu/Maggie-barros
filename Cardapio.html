@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toque Caseiro</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS Geral */
+        body { font-family: sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Remove a linha debaixo dos links */
+        a { text-decoration: none; color: inherit; }
+        a:hover { color: orange; }
+
+        img {
+            width: 150px;       
+            height: 150px;      
+            object-fit: cover;  
+            display: block;    
+            border-radius: 8px; 
+            margin-top: 5px;
+        }
+
+        .logo { width: 100px; height: auto; }
+        ul { list-style: none; padding: 0; }
+        .preço { font-weight: bold; color: green; }
+
+        /* Estilo do Formulário */
+        .form-contato {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px; 
+            gap: 10px;
+        }
+        
+        section { margin-bottom: 40px; }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Toque Caseiro</h1>
+        <p>Sabor de verdade, feito com carinho 🍴</p>
+        <nav>                       
+            <ul>                      
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>                     
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h1>Nosso Cardápio</h1>
+            
+            <h2>Lanches</h2>
+            <ul>
+                <li>
+                    <article>
+                        <span>Misto quente</span> - <span class="preço">R$7,00</span>
+                        <img src="c:\Users\proje\Downloads\misto quente.jpg" alt="Misto quente">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Sanduíche de frango</span> - <span class="preço">R$12,00</span>
+                        <img src="c:\Users\proje\Downloads\sanduiche ffrango.avif" alt="Sanduíche de frango">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Pão de queijo</span> - <span class="preço">R$9,00</span>
+                        <img src="c:\Users\proje\Downloads\yt-069_pao-de-queijo_receita.jpg" alt="Pão de queijo">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Coxinha</span> - <span class="preço">R$3,50</span>
+                        <img src="c:\Users\proje\Downloads\cox_grande_kyodai_2-1.webp" alt="Coxinha">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Pastel (porções)</span> - <span class="preço">R$18,00</span>
+                        <img src="c:\Users\proje\Downloads\istock-1496435795.jpg" alt="Pastel">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Batata frita</span> - <span class="preço">R$12,00</span>
+                        <img src="c:\Users\proje\Downloads\Batata-frita-com-cheddar-e-bacon-Receita-softpig.jpg" alt="Batata frita">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Empada</span> - <span class="preço">R$7,00</span>
+                        <img src="c:\Users\proje\Downloads\209041939_332096688532498_4563438401343223032_n-1024x1024.jpg" alt="Empada">
+                    </article>
+                </li>
+            </ul>
+
+            <h2>Bebidas</h2>
+            <ul>
+                <li>
+                    <article>
+                        <span>Suco natural</span> - <span class="preço">R$10,00</span>
+                        <img src="c:\Users\proje\Downloads\images.jpg" alt="Suco natural">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Drinks</span> - <span class="preço">R$6,00</span>
+                        <img src="c:\Users\proje\Downloads\drinks.jpg" alt="Drinks">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <span>Refrigerante</span> - <span class="preço">R$8,00</span>
+                        <img src="c:\Users\proje\Downloads\refrigerantes.jpg" alt="Refrigerante">
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre nós:</h2>
+            <p>O Toque Caseiro não começou com grandes máquinas, mas com as mãos enfarinhadas e o cheirinho de massa cozinhando no fogão de casa. Tudo nasceu do desejo de criar o salgado perfeito: aquele que tem a massa fininha, o recheio temperado com ervas frescas e, acima de tudo, aquele sabor de "feito na hora" que a gente só encontra na cozinha de mãe.</p>
+            <p>O que começou como uma produção artesanal para os amigos e vizinhos, logo se transformou em uma paixão compartilhada. Nossa missão é simples: entregar para você um pedacinho de conforto em forma de salgado. Sem conservantes exagerados, apenas o sabor autêntico de quem cozinha com o coração.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato:</h2>
+            <form action="https://formsubmit.co" method="POST" class="form-contato">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="telefone" id="tel" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toque Caseiro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
